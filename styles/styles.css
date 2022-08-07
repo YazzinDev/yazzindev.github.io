@@ -1,19 +1,25 @@
 /*Test Stylesheet! */
 
+/* # in front uses a specific element */
+
+#logo {
+	background-image: url(../images/TsuSmile.png);
+	height: 300px;
+	width: 300px;
+	margin: 0 auto;
+	display: block;
+	background-position: center;
+	background-size: cover;
+}
+
+
 /* nothing in front uses the html element */
 p	{
-	color: #5e3787;
+	color: #8551bd;
 	}
 
 body {
 	background-color: #333333;
-	}
-
-
-/* # in the front is used for one specific element ID, it selects one unique element */
-#para1 {
-	color: green;
-	text-align: left;
 }
 
 /* . in the front is used for a class! */
@@ -22,6 +28,17 @@ body {
 }
 
 .large {
-	font-size: 400%;
+	font-size: 300%;
+}
+
+.bordered {
+	border-style: dotted;
+	border-radius: 30px;
+	border-color:rgb(161, 85, 196);
+}
+
+.underlined {
+	border-bottom: 2px solid red;
+	line-height: 100px;
 }
 
