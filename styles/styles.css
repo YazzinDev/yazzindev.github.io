@@ -5,8 +5,13 @@
 
 /* nothing in front uses the html element */
 p	{
-	color: red;
+	color: #5e3787;
 	}
+
+body {
+	background-color: #333333;
+	}
+
 
 /* # in the front is used for one specific element ID,
 	it selects one unique element */
