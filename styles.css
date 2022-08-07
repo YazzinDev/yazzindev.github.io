@@ -1,0 +1,22 @@
+/*Test Stylesheet! */
+
+
+
+
+/* nothing in front uses the html element */
+p	{
+	color: red;
+	}
+
+/* # in the front is used for one specific element ID,
+	it selects one unique element */
+#para1 {
+	color: green;
+	text-align: left;
+}
+
+/* . in the front is used for a class! */
+.center {
+	text-align: center;
+}
+
