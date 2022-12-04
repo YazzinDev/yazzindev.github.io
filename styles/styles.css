@@ -1,55 +1,119 @@
-/*Test Stylesheet! */
-
-/* # in front uses a specific element */
-
-#logo {
-	background-image: url(../images/TsuSmile.png);
-	height: 300px;
-	width: 300px;
-	background-size: 100%;
-}
-
-/* nothing in front uses the html element */
-
-html {
+html, body {
 	height: 100%;
+	width: 100%;
 }
 
 body {
-	background: linear-gradient(to bottom, #181818, #464646 );
-	height:100%;
-	overflow: hidden;
+	margin: 0;
+	padding: 0;
+	background: #202020;
+	background-repeat: no-repeat;
+	background-size: cover;
+	position: relative;
+	cursor: url('crosshair.png'), auto;
+}
+
+#rain {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+}
+
+#overlay {
+	position: fixed;
+	top: 0;
+	left: 0;
+	z-index: 1;
+	width: 100%;
+	height: 100%;
+	pointer-events: none;
+}
+
+h1 {
+	text-align: center;
+	font-size: 100px;
+	color: #dadada;
+	text-shadow: 2px 2px #6b4eca;
+}
+
+div {
+	display: block;
+	align-items: center;
+	justify-content: center;
+	padding: 0 20px;
+}
+
+h2 {
+	font-size: 36px;
+	color: #dadada;
+	text-shadow: 2px 2px #6b4eca;
+	margin: 0 0 20px 0;
+}
+
+p {
+	font-size: 18px;
+	color: #dadada;
+	text-shadow: 1px 1px #6b4eca;
 	margin: 0;
 }
 
-/* . in the front is used for a class! */
 
-.colored	{
-	color: #8551bd;
+
+footer {
+	position: absolute;
+	bottom: 0;
+	width: 100%;
+	text-align: center;
+	font-size: 12px;
+	color: #fff;
+	text-shadow: 1px 1px #333;
+}
+
+
+a {
+	pointer-events: all;
+}
+
+
+
+nav {
+	height: 100px;
+	background-color: #3918a4;
+	box-shadow: 0px 5px 5px rgba(0, 0, 0, 0.5);
+}
+
+	nav ul {
+		list-style-type: none;
+		margin: 0;
+		padding: 0;
+		float: right;
 	}
 
-.centerdiv {
-	display:flex;
-	justify-content: center;
-	align-items: center;
-	height: 300px;
-}
+	nav li {
+		display: inline-block;
+	}
 
-.center {
-	text-align: center;
-}
+	nav button {
+		display: block;
+		height: 100px;
+		padding: 20px;
+		color: #fff;
+		background-color: #893ee9;
+		border: none;
+		cursor: pointer;
+		font-size: 24px;
+		pointer-events: all;
+	}
 
-.large {
-	font-size: 300%;
-}
+		nav button:hover {
+			background-color: #75E6DA;
+		}
 
-.bordered {
-	border-style: double;
-	border-radius: 30px;
-	border-color:rgb(161, 85, 196);
-}
+		nav button.active {
+			background-color: #75E6DA;
+		}
 
-.underlined {
-	border-bottom: 2px solid rgb(68, 48, 182);
-	line-height: 100px;
-}
+
+
